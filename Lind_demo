@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindstrom Air Conditioning & HVAC Maintenance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(15, 32, 67, 0.95) 0%, rgba(24, 61, 120, 0.85) 100%), 
+                        url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <div class="bg-red-600 text-white text-center py-2 px-4 text-sm font-semibold tracking-wide">
+        <i class="fa-solid fa-phone-volume mr-2 animate-pulse"></i> 24/7 Emergency HVAC Repairs Available: <a href="tel:18008131824" class="underline hover:text-amber-300 transition">(800) 813-1824</a>
+    </div>
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="bg-blue-600 text-white p-2.5 rounded-lg font-black text-xl tracking-tight shadow-md">LINDSTROM</div>
+                <span class="text-xs uppercase tracking-wider font-bold text-slate-500 hidden sm:inline-block">Air Conditioning<br>& HVAC Specialist</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+                <a href="#services" class="hover:text-blue-600 transition">Our Services</a>
+                <a href="#pricing" class="hover:text-blue-600 transition">Pricing & Plans</a>
+                <a href="#about" class="hover:text-blue-600 transition">Why Lindstrom</a>
+            </nav>
+            <div>
+                <a href="#book-now" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 py-2.5 rounded-full transition shadow-md shadow-orange-500/20 text-sm">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-bg text-white py-20 lg:py-32 px-4">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-400/30 px-3 py-1 rounded-full text-blue-300 text-sm font-semibold">
+                    <i class="fa-solid fa-certificate text-amber-400"></i> NATE Certified Technicians & True Trust Certified®
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none">
+                    Beat the Heat With Florida's Premier <span class="text-orange-400">HVAC Experts</span>
+                </h1>
+                <p class="text-lg text-slate-300 max-w-xl mx-auto lg:mx-0">
+                    From quick emergency repairs to precise, energy-saving maintenance tune-ups, Lindstrom keeps your home environment consistently comfortable. 
+                </p>
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
+                    <div class="flex items-center gap-2 bg-slate-900/40 px-4 py-2 rounded-lg border border-slate-700">
+                        <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+                        <span class="text-sm font-medium">Lifetime Parts & Labor Warranty Available</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-900/40 px-4 py-2 rounded-lg border border-slate-700">
+                        <i class="fa-solid fa-dollar-sign text-amber-400"></i>
+                        <span class="text-sm font-medium">$0 Down Financing Available</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="book-now" class="lg:col-span-5 bg-white text-slate-900 p-6 sm:p-8 rounded-2xl shadow-2xl border border-slate-100">
+                <h3 class="text-xl font-bold text-slate-900 mb-1">Schedule Fast Service</h3>
+                <p class="text-sm text-slate-500 mb-6">Fill out your request below and our team will call back instantly.</p>
+                
+                <form action="https://formspree.io/f/xnjybnwp" method="POST" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Select Required Service</label>
+                        <select name="Service_Requested" required class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="" disabled selected>-- Choose a service --</option>
+                            <option value="AC Maintenance">AC Maintenance (19-Point Tune-Up)</option>
+                            <option value="AC Repair">Repair AC / Diagnostics</option>
+                            <option value="Install New AC">Install New AC Unit</option>
+                            <option value="Clean Ducts">Clean Ducts & Vents</option>
+                            <option value="Duct Installation/Repair">Install / Repair Ducts & Vents</option>
+                            <option value="Ductless Service">Ductless Heating & AC Services</option>
+                            <option value="Thermostat Service">Thermostat Installation / Repair</option>
+                            <option value="Heating Service">Heating System Maintenance / Repair</option>
+                            <option value="HVAC Overhaul">Full HVAC Overhaul</option>
+                        </select>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Your Name</label>
+                            <input type="text" name="Customer_Name" required placeholder="John Doe" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Phone Number</label>
+                            <input type="tel" name="Customer_Phone" required placeholder="(551) 555-0199" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Preferred Appointment Date</label>
+                        <input type="date" name="Preferred_Date" required class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-4 rounded-lg transition tracking-wide text-sm shadow-md">
+                        CONFIRM APPOINTMENT REQUEST
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">Comprehensive Offerings</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">What Lindstrom Does Best</h2>
+            <p class="text-slate-500 mt-4">We are full-service specialists built to keep residential and light commercial cooling and heating systems operating at maximum performance levels.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-xl mb-4"><i class="fa-solid fa-snowflake"></i></div>
+                <h3 class="font-bold text-lg text-slate-900 mb-2">AC Maintenance</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Our rigorous 19-point precision performance tune-up minimizes surprise system breakdowns and safely optimizes operating flow.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-xl mb-4"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3 class="font-bold text-lg text-slate-900 mb-2">Repair AC</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Fast diagnostics and reliable fixes from seasoned NATE-certified cooling techs. Fully loaded service trucks right to your driveway.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-xl mb-4"><i class="fa-solid fa-wind"></i></div>
+                <h3 class="font-bold text-lg text-slate-900 mb-2">Clean Ducts & Vents</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Improve your overall indoor air quality drastically while eliminating distribution resistance from trapped dust and particulates.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-xl mb-4"><i class="fa-solid fa-box-tissue"></i></div>
+                <h3 class="font-bold text-lg text-slate-900 mb-2">Ductless Heating & AC</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Tailored mini-split systems that maximize specific localized zone environments without relying on bulk distribution lines.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-xl mb-4"><i class="fa-solid fa-gear"></i></div>
+                <h3 class="font-bold text-lg text-slate-900 mb-2">HVAC Maintenance & Repair</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Complete macro-level infrastructure assessments, physical system restoration, and comprehensive balancing services.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-xl mb-4"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+                <h3 class="font-bold text-lg text-slate-900 mb-2">Heating Maintenance & Repair</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Heat pump overhauls and furnace system diagnostics to make sure you stay comfortable on cold days.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-xl mb-4"><i class="fa-solid fa-square-plus"></i></div>
+                <h3 class="font-bold text-lg text-slate-900 mb-2">Install AC & Heating Systems</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">High-efficiency replacements engineered cleanly to match your home's exact heat load specifications profile.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-xl mb-4"><i class="fa-solid fa-grip-lines-vertical"></i></div>
+                <h3 class="font-bold text-lg text-slate-900 mb-2">Install / Repair Ducts & Vents</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Proper structural layout remodeling, physical leak sealing, and modern drop-line design replacement options.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-xl mb-4"><i class="fa-solid fa-sliders"></i></div>
+                <h3 class="font-bold text-lg text-slate-900 mb-2">Install / Repair Thermostats</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Upgrade to interactive, Wi-Fi enabled smart thermostats to control your environment and save on energy bills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="bg-slate-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-orange-400 font-bold uppercase tracking-widest text-sm">No Hidden Fees</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-2">Fair, Straightforward Pricing</h2>
+                <p class="text-slate-400 mt-4">We believe in complete pricing transparency before our clean service crews begin work.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 items-stretch">
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-slate-400 font-semibold uppercase tracking-wider text-sm">Diagnostic Fee</h4>
+                        <h3 class="text-xl font-bold mt-1 text-white">Standard Service Call</h3>
+                        <div class="my-6">
+                            <span class="text-4xl font-black text-white">$99</span>
+                            <span class="text-slate-400 text-sm"> / one-time visit</span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">Applied straight toward any repairs performed on your system during that trip.</p>
+                        <hr class="border-slate-700 my-4">
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Full System Diagnostics</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>NATE-Certified Technician</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Clear upfront repair quote</li>
+                        </ul>
+                    </div>
+                    <a href="#book-now" class="block text-center bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 rounded-xl mt-8 transition text-sm">Book Service Call</a>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl p-8 border-2 border-orange-500 relative flex flex-col justify-between transform lg:-translate-y-2 shadow-xl shadow-orange-500/10">
+                    <span class="absolute top-0 right-6 transform -translate-y-1/2 bg-orange-500 text-white text-xs uppercase tracking-widest font-black py-1 px-3 rounded-full">Best Value</span>
+                    <div>
+                        <h4 class="text-orange-400 font-semibold uppercase tracking-wider text-sm">Lindstrom Membership</h4>
+                        <h3 class="text-xl font-bold mt-1 text-white">Annual Maintenance Plan</h3>
+                        <div class="my-6">
+                            <span class="text-4xl font-black text-white">$260</span>
+                            <span class="text-slate-400 text-sm"> / year</span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">The safest preventative policy to secure and safeguard your structural system investment long-term.</p>
+                        <hr class="border-slate-700 my-4">
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li><i class="fa-solid fa-check text-orange-400 mr-2"></i><strong>TWO</strong> Performance Tune-ups/Year</li>
+                            <li><i class="fa-solid fa-check text-orange-400 mr-2"></i><strong>15% Discount</strong> on Repairs & Equipment</li>
+                            <li><i class="fa-solid fa-check text-orange-400 mr-2"></i>Front-of-the-Line Priority Scheduling</li>
+                            <li><i class="fa-solid fa-check text-orange-400 mr-2"></i>No After-Hours/Holiday Emergency Fees</li>
+                        </ul>
+                    </div>
+                    <a href="#book-now" class="block text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl mt-8 transition text-sm shadow-md">Sign Up Now</a>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-slate-400 font-semibold uppercase tracking-wider text-sm">System Replacements</h4>
+                        <h3 class="text-xl font-bold mt-1 text-white">New HVAC Installations</h3>
+                        <div class="my-6">
+                            <span class="text-slate-400 text-sm font-medium">Starting at </span>
+                            <span class="text-4xl font-black text-white">Quote Only</span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">Custom-tailored modern efficiency upgrades that cleanly match home sizing formulas perfectly.</p>
+                        <hr class="border-slate-700 my-4">
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Free In-Home Load Estimate</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Carrier Home Comfort Systems</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Available Lifetime Parts & Labor</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>0% Down Financing Programs</li>
+                        </ul>
+                    </div>
+                    <a href="#book-now" class="block text-center bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 rounded-xl mt-8 transition text-sm">Request Free Estimate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">The Lindstrom Advantage</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Why South Florida Trusts Us With Their Comfort</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    We charge an honest, fair price, don't cut corners, and our air conditioning technicians are heavily certified. We back our craftsmanship up with specialized guarantees that protect you from unexpected surprises.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-2">
+                    <div class="flex gap-3">
+                        <div class="text-blue-600 text-2xl mt-1"><i class="fa-solid fa-business-time"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Since 1975</h4>
+                            <p class="text-xs text-slate-500 mt-1">Decades of trusted service across South Florida.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="text-blue-600 text-2xl mt-1"><i class="fa-solid fa-user-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Trust Certified®</h4>
+                            <p class="text-xs text-slate-500 mt-1">Drug-tested, background-checked specialists.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gradient-to-br from-blue-600 to-indigo-900 p-8 rounded-2xl text-white space-y-6 shadow-xl">
+                <h3 class="text-xl font-bold tracking-tight">Our Promise to You:</h3>
+                <blockquote class="border-l-4 border-orange-400 pl-4 italic text-slate-200 text-sm sm:text-base">
+                    "Your air conditioning repair or service will be done right the first time—guaranteed. If you aren't completely happy, we'll make it right."
+                </blockquote>
+                <div class="flex items-center gap-4 pt-2">
+                    <div class="w-12 h-12 rounded-full bg-slate-100/20 flex items-center justify-center text-xl font-black text-orange-400">100%</div>
+                    <div>
+                        <h5 class="font-bold text-sm">Satisfaction Guarantee</h5>
+                        <p class="text-xs text-slate-300 mt-0.5">We don't leave until your system runs perfectly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 text-sm py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+                <p class="font-bold text-white mb-1">Lindstrom Air Conditioning & Plumbing</p>
+                <p class="text-xs text-slate-500">Main Office: 3581 W. McNab Rd Pompano Beach, FL 33069</p>
+            </div>
+            <div class="text-xs text-slate-500 text-center sm:text-right">
+                <p>HVAC License: CAC056703, CAC056971 | Plumbing License: CFC1427611</p>
+                <p class="mt-1">&copy; 2026 Lindstrom Air Conditioning. Designed for maximum lead conversions.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
